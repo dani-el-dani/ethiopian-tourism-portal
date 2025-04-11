@@ -2,6 +2,9 @@ import Header from "./Header"
 import { events } from "./destinationsData"
 
 function Events(){
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return(
         <>
         <header>
@@ -12,7 +15,7 @@ function Events(){
         </header>
         <section>
             <div className='event-page-section'>
-                <h1 className='section-title'>Upcomming Events</h1>
+                <h1 className='section-title'>Festivals & Cultural Events</h1>
                 <div className="event-cards-container">
                     {
                         events.map((eventElement, index) => (
