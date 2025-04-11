@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "./Header"
 import { events } from "./destinationsData"
 
