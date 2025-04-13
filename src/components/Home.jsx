@@ -41,7 +41,7 @@ function Home(){
                     ))}
                 </div>
                 <div className='featured-section-CTA'>
-                    <a className='hero-CTA' href="">See All Destinations</a>
+                    <Link to="/destinations" className="hero-CTA">See All Destinations</Link>
                 </div>
             </div>
         </section>
@@ -131,6 +131,9 @@ function Home(){
                             </div>
                         )) }
                     </div>
+                </div>
+                <div className='featured-section-CTA'>
+                    <Link to="/events" className="hero-CTA">See All Events</Link>
                 </div>
             </div>
         </section>

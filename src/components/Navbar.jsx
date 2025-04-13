@@ -1,12 +1,12 @@
 import logo from '../assets/logo.webp'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 function Navbar(){
 
     return(
         <div className='nav-bar-container'>
             <div className='nav-bar'>
-                <img id='logo' src={logo} alt="logo of ethiopian travel and heritage portal" />
+                <Link to={"/"}><img id='logo' src={logo} alt="logo of ethiopian travel and heritage portal" /></Link>
                 <ul className='nav-list'>
                     <li><NavLink to={"/"} className={({isActive})=> isActive?"active-nav":undefined} end>Home</NavLink></li>
                     <li><NavLink to={"/destinations"} className={({isActive})=> isActive?"active-nav":undefined}>Destinations</NavLink></li>

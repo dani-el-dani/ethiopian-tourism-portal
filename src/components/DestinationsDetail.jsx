@@ -44,7 +44,7 @@ function DestinationsDetail(){
                         <h2 id='travel-tips'>Travel Tips</h2>
                         <p>{markdown.travelTips}</p>
                         <h2 id='near-by-destinations'>Nearby Destinations</h2>
-                        <p>{markdown.nearbyDestinations}</p>
+                        <p>{markdown.nearbyDestinations.join(", ")}</p>
 
                     </div>
                 </div>
